@@ -45,7 +45,7 @@ exports.signupPage = async (req, res) => {
 exports.logout = (req, res) => {
     try{
         res.clearCookie('user');
-        res.redirect('/');
+        res.redirect('/login');
     }
     catch(err){
         console.log(err);
