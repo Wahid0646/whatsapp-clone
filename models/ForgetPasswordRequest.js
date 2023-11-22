@@ -6,7 +6,7 @@ const ForgetPasswordRequest = sequelize.define('ForgetPasswordRequest', {
         type : Sequelize.INTEGER,
         primaryKey : true,
         autoIncrement : true,
-        allowNul : false
+        allowNull : false
     },
     uuid : {
         type : Sequelize.STRING

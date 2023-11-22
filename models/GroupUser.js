@@ -4,11 +4,11 @@ const sequelize = require('../database/connection');
 const GroupUser = sequelize.define('GroupUser', {
     chatGroupId : {
         type : Sequelize.INTEGER,
-        allowNul : false
+        allowNull : false
     },
     userId : {
         type: Sequelize.INTEGER,
-        allowNul : false
+        allowNull : false
     }
 }, {
     timestamps: false

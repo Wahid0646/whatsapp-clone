@@ -6,20 +6,20 @@ const User = sequelize.define('User', {
         type : Sequelize.INTEGER,
         primaryKey : true,
         autoIncrement : true,
-        allowNul : false
+        allowNull : false
     },
     name : {
         type : Sequelize.STRING,
-        allowNul : false
+        allowNull : false
     },
     email : {
         type : Sequelize.STRING,
         unique : true,
-        allowNul : false
+        allowNull : false
     },
     password : {
         type : Sequelize.STRING,
-        allowNul : false
+        allowNull : false
     },
     jwt : {
         type: Sequelize.STRING,

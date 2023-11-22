@@ -89,7 +89,7 @@ const saveFileToS3 = async (data, fileName) => {
         return new Promise ((resolve, reject) => {
             awsS3.createBucket(() => {
                 const params = {
-                    Bucket : 'expensetracker-reports',
+                    Bucket : 'groupchat',
                     Key : fileName,
                     Body : data,
                     ACL: 'public-read'

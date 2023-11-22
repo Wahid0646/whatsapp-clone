@@ -147,7 +147,7 @@ exports.resetPassword = async (req, res) => {
             }).catch(err => {
                 return false;
             })
-            res.cookies('uuid', null);
+            res.cookie('uuid', null);
             res.status(200).send(changePassword);
         }
     }

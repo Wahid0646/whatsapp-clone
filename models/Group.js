@@ -6,11 +6,11 @@ const Group = sequelize.define('chatGroup', {
         type : Sequelize.INTEGER,
         primaryKey : true,
         autoIncrement : true,
-        allowNul : false
+        allowNull : false
     },
     name : {
         type : Sequelize.STRING,
-        allowNul : false
+        allowNull : false
     }
 }, {
     timestamps: false

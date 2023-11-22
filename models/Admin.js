@@ -9,11 +9,11 @@ const Admin = sequelize.define('Admin', {
     },
     chatGroupId : {
         type : Sequelize.INTEGER,
-        allowNul : false
+        allowNull : false
     },
     userId : {
         type: Sequelize.INTEGER,
-        allowNul : false
+        allowNull : false
     }
 }, {
     timestamps: false
