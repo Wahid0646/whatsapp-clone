@@ -1,8 +1,8 @@
 const sequelize = require('../database/connection');
 const { Op } = require("sequelize");
-const User = require('../models/User');
-const Group = require('../models/Group');
-const Admin = require('../models/Admin');
+const User = require('../models/user');
+const Group = require('../models/group');
+const Admin = require('../models/admin');
 
 exports.makeGroupAdmin = async (req, res) => {
     try{

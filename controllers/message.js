@@ -1,6 +1,6 @@
 const sequelize = require('../database/connection');
 const { Op } = require("sequelize");
-const Message = require('../models/Message');
+const Message = require('../models/message');
 const awsS3 = require('../util/aws');
 
 exports.getMessages = async (req, res) => {

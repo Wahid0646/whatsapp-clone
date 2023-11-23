@@ -19,10 +19,10 @@ app.use(bodyParser.json());
 app.use(cookieParser());
 
 const sequelize = require('./database/connection');
-const User = require('./models/User');
-const Message = require('./models/Message');
-const Group = require('./models/Group');
-const Admin = require('./models/Admin');
+const User = require('./models/user');
+const Message = require('./models/message');
+const Group = require('./models/group');
+const Admin = require('./models/admin');
 
 const homeRoutes = require('./routes/home');
 const userRoutes = require('./routes/user');

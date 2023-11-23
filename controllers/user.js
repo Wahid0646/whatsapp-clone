@@ -1,7 +1,7 @@
 const sequelize = require('../database/connection');
 const { Op } = require("sequelize");
-const User = require('../models/User');
-const ForgetPasswordRequest = require('../models/ForgetPasswordRequest');
+const User = require('../models/user');
+const ForgetPasswordRequest = require('../models/forgetpasswordrequest');
 const passwordEncryption = require('../util/encryptPassword');
 const jwtToken = require('../util/jwtToken');
 const mailSystem = require('../util/mails');
